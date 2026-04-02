@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Focus Blocker",
+  "version": "1.0",
+  "description": "Block distracting sites on a schedule so you can actually get stuff done.",
+
+  "permissions": [
+    "declarativeNetRequest",
+    "storage",
+    "alarms"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "icons": {
+    "16":  "icons/icon16.png",
+    "32":  "icons/icon32.png",
+    "48":  "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Focus Blocker",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "incognito": "not_allowed"
+}
